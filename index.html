@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="bn">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+<title>Ruins Run</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@500;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<canvas id="c"></canvas>
+<div id="hud" hidden>
+  <div><span id="score">0</span> m</div>
+  <div class="coins"><i></i><span id="coins">0</span></div>
+</div>
+<div id="stumble" hidden></div>
+<section id="menu" class="panel">
+  <h1>Ruins Run</h1>
+  <p id="best"></p>
+  <button id="play">Run</button>
+  <small>← → lane &nbsp; ↑ jump &nbsp; ↓ slide &nbsp;·&nbsp; swipe on phone</small>
+</section>
+<section id="over" class="panel" hidden>
+  <h2>Caught</h2>
+  <p><b id="fscore">0</b> m &nbsp;·&nbsp; <b id="fcoins">0</b> coins</p>
+  <p id="newbest" hidden>New best</p>
+  <button id="again">Run again</button>
+</section>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
+<script src="game.js"></script>
+</body>
+</html>
